@@ -23,3 +23,8 @@ function(add_day day)
 endfunction()
 
 add_day("01")
+add_day("02")
+add_day("03")
+add_day("04")
+add_day("05")
+add_day("06")
