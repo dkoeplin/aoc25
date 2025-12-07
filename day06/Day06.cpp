@@ -15,7 +15,6 @@ I64 operation(const List<I64> &numbers, char op) {
     for (I64 num : numbers) {
         result = sum ? result + num : result * num;
     }
-    std::cout << op << numbers << " = " << result << std::endl;
     return result;
 }
 
