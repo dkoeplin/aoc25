@@ -135,9 +135,8 @@ I64 part1(const List<Machine> &machines) {
     return part1;
 }
 
-// (0,1,2) (1,3) {9,18,9,9}
-// [A B] * [1 1 1 0] = [9 18 9 9]
-//         [0 1 0 1]
+// Each "joltage" is a function of some of the button presses.
+// This can just be expressed as a system of linear equations, which can be minimized with e.g. z3.
 I64 part2(const List<Machine> &machines) {
     I64 part2 = 0;
     for (const auto &machine : machines) {
