@@ -52,9 +52,6 @@ I64 num_paths(Map<std::string, List<std::string>> &nodes, const std::string &sta
                 for (const auto &[cat, paths] : visited[edge]) {
                     Set<std::string> cat2 = cat;
                     if (is_requirement) cat2.insert(current);
-                    if (auto iter2 = iter->second.find(cat2); iter2 == iter->second.end()) {
-                        iter->second[cat2] = 0;
-                    }
                     iter->second[cat2] += paths;
                 }
             }
